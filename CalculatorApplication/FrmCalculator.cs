@@ -70,7 +70,7 @@ namespace CalculatorApplication
 
         private void txtBoxInput1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Allow only digits, decimal points, and control keys (like backspace)
+            // Allow only digits, decimal point
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
             {
                 e.Handled = true;
@@ -85,7 +85,7 @@ namespace CalculatorApplication
 
         private void txtBoxInput2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Allow only digits, decimal points, and control keys (like backspace)
+            // Allow only digits, decimal point
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
             {
                 e.Handled = true;
